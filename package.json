@@ -1,0 +1,23 @@
+{
+  "name": "new-node-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d dist",
+    "open": "node dist/index.js",
+    "start": "npm run build && npm run open",
+    "dev": "nodemon --exec babel-node src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "express": "^4.16.2",
+    "mongoose": "^4.13.6",
+    "nodemon": "^1.12.5"
+  }
+}
